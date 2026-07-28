@@ -1,6 +1,67 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>About FARAD Energy Systems | FARAD Energy Systems</title><meta name="description" content="Learn about FARAD&#x27;s mission, values and engineering philosophy.">
 <link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/forms.css"><link rel="stylesheet" href="css/animations.css">
+
+<style>
+  .leadership-section {
+    background: #ffffff;
+  }
+
+  .leadership-section .section-heading {
+    max-width: 780px;
+  }
+
+  .leadership-grid {
+    align-items: stretch;
+  }
+
+  .leader-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leader-avatar {
+    width: 118px;
+    height: 118px;
+    margin: 0 auto 1.4rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, var(--blue), var(--teal));
+    color: #fff;
+    border: 6px solid var(--sky);
+    box-shadow: var(--shadow-sm);
+    font-size: 1.9rem;
+    font-weight: 900;
+    letter-spacing: .04em;
+  }
+
+  .leader-card h3 {
+    margin-bottom: .45rem;
+  }
+
+  .leader-title {
+    color: var(--blue);
+    font-weight: 900;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .leader-bio {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 760px) {
+    .leader-avatar {
+      width: 104px;
+      height: 104px;
+      font-size: 1.65rem;
+    }
+  }
+</style>
+
 </head><body>
 <a class="skip-link" href="#main">Skip to main content</a>
 <div class="announcement">Seeking qualified pilot sites, infrastructure partners and strategic investors.</div>
@@ -20,7 +81,58 @@
 </div></div></header>
 <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="search-title">
 <div class="search-dialog"><button class="search-close btn btn-secondary" type="button">Close</button><h2 id="search-title">Search FARAD</h2><div class="search-row"><label class="visually-hidden" for="site-search">Search terms</label><input id="site-search" type="search" placeholder="Search technology, pilots, investors..."></div><div class="search-results"><p>Start typing to search the FARAD site.</p></div></div></div>
-<main id="main"><section class="page-hero" style="--hero:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1800&q=85')"><div class="container"><span class="eyebrow">Mission, philosophy and responsible commercialization</span><h1>About FARAD Energy Systems</h1><p>FARAD is focused on practical opportunities to recover energy from water flow, pressure and industrial infrastructure.</p></div></section><section class="section"><div class="container split"><div><h2>Our Mission</h2><p>Connect promising energy-recovery technologies with facilities that have appropriate operating conditions while validating technical and economic claims before large-scale deployment.</p><h2>Our Vision</h2><p>Help infrastructure operators recover useful energy from pressure and elevation conditions that would otherwise be dissipated.</p></div><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85" alt="Engineering office"></div></section><section class="section section-soft"><div class="container"><div class="grid-3"><article class="card"><h3>Identifiable Energy Source</h3><p>Every generator must have a measurable input.</p></article><article class="card"><h3>Net Results</h3><p>Include auxiliary loads, pumping effects and downtime.</p></article><article class="card"><h3>Validation Before Scale</h3><p>Commercial deployment follows site testing and safety review.</p></article></div></div></section><section class="section"><div class="container"><div class="grid-4"><article class="card"><h3>Technical Integrity</h3><p>Separate preliminary claims from demonstrated results.</p></article><article class="card"><h3>Operational Safety</h3><p>Protect critical systems through controls and bypasses.</p></article><article class="card"><h3>Practical Partnerships</h3><p>Work with utilities, engineers, researchers and investors.</p></article><article class="card"><h3>Responsible Commercialization</h3><p>Advance only when evidence supports value.</p></article></div></div></section></main>
+<main id="main"><section class="page-hero" style="--hero:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1800&q=85')"><div class="container"><span class="eyebrow">Mission, philosophy and responsible commercialization</span><h1>About FARAD Energy Systems</h1><p>FARAD is focused on practical opportunities to recover energy from water flow, pressure and industrial infrastructure.</p></div></section><section class="section"><div class="container split"><div><h2>Our Mission</h2><p>Connect promising energy-recovery technologies with facilities that have appropriate operating conditions while validating technical and economic claims before large-scale deployment.</p><h2>Our Vision</h2><p>Help infrastructure operators recover useful energy from pressure and elevation conditions that would otherwise be dissipated.</p></div><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85" alt="Engineering office"></div></section><section class="section section-soft"><div class="container"><div class="grid-3"><article class="card"><h3>Identifiable Energy Source</h3><p>Every generator must have a measurable input.</p></article><article class="card"><h3>Net Results</h3><p>Include auxiliary loads, pumping effects and downtime.</p></article><article class="card"><h3>Validation Before Scale</h3><p>Commercial deployment follows site testing and safety review.</p></article></div></div></section>
+<section class="section leadership-section" aria-labelledby="leadership-heading">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow" style="color: var(--teal);">Leadership</span>
+      <h2 id="leadership-heading">Meet the FARAD Leadership Team</h2>
+      <p>
+        FARAD Energy Systems brings together leadership in engineering,
+        technology, business development and responsible commercialization.
+      </p>
+    </div>
+
+    <div class="grid-3 leadership-grid">
+      <article class="card leader-card" data-reveal>
+        <div class="leader-avatar" aria-hidden="true">JM</div>
+        <h3>John J. Mitchell</h3>
+        <p class="leader-title">Co-founder &amp; Chief IT Officer</p>
+        <p class="leader-bio">
+          John leads FARAD’s information-technology strategy, digital systems,
+          website infrastructure and technology operations. He supports the
+          company’s technical communications and online collaboration with
+          prospective partners, pilot sites and investors.
+        </p>
+      </article>
+
+      <article class="card leader-card" data-reveal>
+        <div class="leader-avatar" aria-hidden="true">YZ</div>
+        <h3>Yun ZHU</h3>
+        <p class="leader-title">Chief Engineer &amp; Innovator</p>
+        <p class="leader-bio">
+          Yun leads engineering development and technical innovation for
+          FARAD’s energy-recovery technologies. He guides product concepts,
+          engineering evaluation and the technical work required to advance
+          promising systems toward controlled testing and validation.
+        </p>
+      </article>
+
+      <article class="card leader-card" data-reveal>
+        <div class="leader-avatar" aria-hidden="true">DW</div>
+        <h3>David Wu</h3>
+        <p class="leader-title">Co-founder, President &amp; CEO</p>
+        <p class="leader-bio">
+          David leads FARAD’s corporate strategy, operations, business
+          development and commercialization efforts. He directs relationships
+          with infrastructure partners, prospective customers, pilot hosts
+          and strategic investors.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="section"><div class="container"><div class="grid-4"><article class="card"><h3>Technical Integrity</h3><p>Separate preliminary claims from demonstrated results.</p></article><article class="card"><h3>Operational Safety</h3><p>Protect critical systems through controls and bypasses.</p></article><article class="card"><h3>Practical Partnerships</h3><p>Work with utilities, engineers, researchers and investors.</p></article><article class="card"><h3>Responsible Commercialization</h3><p>Advance only when evidence supports value.</p></article></div></div></section></main>
 <footer class="site-footer"><div class="container"><div class="footer-grid">
 <div><h3>FARAD Energy Systems</h3><p>Hydraulic energy recovery, water infrastructure and responsible technology evaluation.</p></div>
 <div><h3>Technology</h3><a href="water-cycle-system.html">Water-Cycle System</a><a href="technology-evaluation.html">Technology Evaluation</a><a href="pilot-projects.html">Pilot Projects</a></div>
