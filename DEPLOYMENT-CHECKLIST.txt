@@ -1,0 +1,10 @@
+PRE-LAUNCH CHECKLIST
+- Replace externally hosted images with licensed local image files.
+- Add real company email, phone and legal entity information.
+- Connect inquiry forms to a secure form-processing service.
+- Add privacy policy, terms, accessibility statement and securities disclaimer.
+- Review every technical and financial claim with qualified engineers and counsel.
+- Test keyboard navigation, screen readers, mobile layouts and color contrast.
+- Configure redirects and custom error pages in AWS Amplify.
+- Add analytics and consent controls if needed.
+- Confirm farad.live and www.farad.live behavior.

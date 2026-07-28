@@ -1,0 +1,8 @@
+
+.form-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow-sm)}
+.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.full{grid-column:1/-1}
+label{display:block;font-weight:850;color:var(--navy);margin-bottom:7px}
+input,select,textarea{width:100%;border:1px solid #b7c8ce;border-radius:10px;padding:13px 14px;background:#fff;color:var(--ink)}
+textarea{min-height:150px;resize:vertical}.field-help{font-size:.85rem;color:var(--muted);margin-top:4px}
+.form-status{margin-top:16px;font-weight:800;color:var(--teal)}
+@media(max-width:760px){.form-grid{grid-template-columns:1fr}.full{grid-column:auto}}
