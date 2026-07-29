@@ -24,3 +24,29 @@
 .text-link{font-weight:900;color:var(--blue);text-decoration:none}.text-link:hover,.text-link:focus-visible{text-decoration:underline}
 @media(max-width:1080px){.stat-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.logo-wall{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:760px){.stat-grid,.steps{grid-template-columns:1fr}.callout{padding:34px 24px}.logo-wall{grid-template-columns:repeat(2,1fr)}.sticky-cta{right:12px;bottom:12px}}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;       /* Prevents overflow on mobile screens */
+  align-items: center;  /* Vertically centers buttons and text links */
+  gap: 16px;             /* Spacing BETWEEN items without edge margins */
+  margin-top: 14px;      /* Spacing from the above content*/
+  margin-bottom: 14px;   /*Spacing from the below content */
+}
+
+/*images inside cards or feature boxes */
+.card img, 
+.feature-box img {
+  width: 100%;
+  height: 200px;           /* Adjust desired fixed height */
+  object-fit: cover;        /* Keeps image proportions correct and crops overflow */
+  border-radius: 8px 8px 0 0; /* Keeps rounded top corners if cards have borders */
+  border-radius: 8px 8px 8px 8px;
+}
+
+.feature-visual {
+  display: flex;
+  flex-direction: column; /* Or row for side-by-side layouts */
+  width: 100%;
+}
+
