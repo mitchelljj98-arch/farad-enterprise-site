@@ -4,11 +4,40 @@
 .header-inner{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:28px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy);flex:0 0 auto}
 .brand-mark {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background: radial-gradient(circle at center, var(--white) 0 20%, transparent 21%), conic-gradient(from 45deg, var(--teal), var(--blue), var(--teal));
-    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, .75);
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at center,
+      #2a9aa5 0 20%,
+      transparent 21%),
+    conic-gradient(from 45deg,
+      #2a9aa5,
+      #1d6d97,
+      #2a9aa5);
+  box-shadow: inset 0 0 0 5px rgba(255,255,255,.75);
+}
+
+.brand-mark::before,
+.brand-mark::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+}
+
+.brand-mark::before {
+  width: 10px;
+  height: 2px;
+}
+
+.brand-mark::after {
+  width: 2px;
+  height: 10px;
 }
 .brand-text strong{display:block;font-size:1.08rem;line-height:1.05}.brand-text span{display:block;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.11em}
 .header-actions{display:flex;align-items:center;gap:12px}
