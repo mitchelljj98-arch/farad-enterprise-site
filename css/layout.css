@@ -4,52 +4,43 @@
 .header-inner{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:28px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy);flex:0 0 auto}
 .brand-mark {
-  position: relative;
-  display: inline-block;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
 
-  /* Outer ring + teal ring + white center */
-  background:
-    radial-gradient(
-      circle at center,
-      #ffffff 0 20%,
-      transparent 20.5%
-    ),
-    conic-gradient(
-      from 45deg,
-      #2aa19b,
-      #1d6d97,
-      #2aa19b
-    );
+    background:
+        radial-gradient(circle at center,
+            #ffffff 0 20%,
+            transparent 20.5%),
+        radial-gradient(circle at 70% 30%,
+            #38a8a3 0%,
+            #247f95 55%,
+            #18628e 100%);
 
-  /* Light blue outer ring */
-  box-shadow: inset 0 0 0 6px #d6e1e8;
+    box-shadow: inset 0 0 0 6px #d6e1e8;
 }
 
-/* Horizontal part of + */
 .brand-mark::before,
 .brand-mark::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background: #000;
-  border-radius: 2px;
-  transform: translate(-50%, -50%);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #000;
+    transform: translate(-50%, -50%);
+    border-radius: 1px;
 }
 
-/* Horizontal bar */
 .brand-mark::before {
-  width: 12px;
-  height: 2px;
+    width: 8px;
+    height: 2px;
 }
 
-/* Vertical bar */
 .brand-mark::after {
-  width: 2px;
-  height: 12px;
+    width: 2px;
+    height: 8px;
 }
 .brand-text strong{display:block;font-size:1.08rem;line-height:1.05}.brand-text span{display:block;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.11em}
 .header-actions{display:flex;align-items:center;gap:12px}
