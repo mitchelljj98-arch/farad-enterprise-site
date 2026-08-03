@@ -1,277 +1,543 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About FARAD Energy Systems | FARAD Energy Systems</title>
+    <meta
+      name="description"
+      content="Learn about FARAD&#x27;s mission, values and engineering philosophy."
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/animations.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>About FARAD Energy Systems | FARAD Energy Systems</title>
-  <meta name="description" content="Learn about FARAD&#x27;s mission, values and engineering philosophy.">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/forms.css">
-  <link rel="stylesheet" href="css/animations.css">
+    <style>
+      /* ===========================
+         Leadership Section
+      =========================== */
 
-  <style>
-    .leadership-section {
-      background: #ffffff;
-    }
-
-    .leadership-section .section-heading {
-      max-width: 780px;
-    }
-
-    .leadership-grid {
-      align-items: stretch;
-    }
-
-    .leader-card {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .leader-avatar {
-      width: 118px;
-      height: 118px;
-      margin: 0 auto 1.4rem;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(135deg, var(--blue), var(--teal));
-      color: #fff;
-      border: 6px solid var(--sky);
-      box-shadow: var(--shadow-sm);
-      font-size: 1.9rem;
-      font-weight: 900;
-      letter-spacing: .04em;
-    }
-
-    .leader-card h3 {
-      margin-bottom: .45rem;
-    }
-
-    .leader-title {
-      color: var(--blue);
-      font-weight: 900;
-      line-height: 1.4;
-      margin-bottom: 1rem;
-    }
-
-    .leader-bio {
-      text-align: left;
-      margin-bottom: 0;
-    }
-
-    @media (max-width: 760px) {
-      .leader-avatar {
-        width: 104px;
-        height: 104px;
-        font-size: 1.65rem;
+      .leadership-section {
+        background: #ffffff;
       }
-    }
-  </style>
 
-</head>
+      .leadership-section .section-heading {
+        max-width: 780px;
+        margin: 0 auto 3rem;
+        text-align: center;
+      }
 
-<body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="announcement">Seeking qualified pilot sites, infrastructure partners and strategic investors.</div>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="FARAD Energy Systems home"><span class="brand-mark" aria-hidden="true"></span><span
-          class="brand-text"><strong>FARAD</strong><span>Energy Systems</span></span></a>
-      <div class="header-actions">
-        <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="nav-item"><button class="nav-trigger" type="button" aria-expanded="false">Technology &
-                Markets</button>
-              <div class="mega-menu"><a href="water-cycle-system.html"><strong>Water-Cycle
-                    System</strong><br><span>Primary hydraulic energy-recovery technology</span></a><a
-                  href="applications.html"><strong>Applications</strong><br><span>Wastewater, water utility,
-                    reclaimed-water and industrial markets</span></a><a
-                  href="data-center-partnerships.html"><strong>Data Center Partnerships</strong><br><span>Utility and
-                    reclaimed-water partnerships for campuses</span></a><a href="pilot-projects.html"><strong>Pilot
-                    Projects</strong><br><span>Site qualification, measurement and validation</span></a><a
-                  href="technology-evaluation.html"><strong>Technology Evaluation</strong><br><span>Magnetic-levitation
-                    and vehicle systems under evaluation</span></a><a
-                  href="faq.html"><strong>FAQ</strong><br><span>Common technical and commercial questions</span></a>
-              </div>
-            </li>
-            <li><a href="updates.html">News & Updates</a></li>
-            <li><a href="investors.html">Investors</a></li>
-            <li><a href="about.html" aria-current="page">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <button class="search-button" type="button" aria-label="Search site">Search</button>
-        <a class="btn btn-primary header-cta" href="contact.html">Request a Site Evaluation</a>
-      </div>
+      .leadership-grid {
+        align-items: stretch;
+        gap: 2rem;
+      }
+
+      .leader-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2.5rem 2rem;
+        border: 1px solid #d7e8ef;
+        border-radius: 24px;
+        background: #ffffff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .leader-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+      }
+
+      /* ===========================
+         Leadership Avatar
+      =========================== */
+
+      .leader-avatar {
+        width: 118px;
+        height: 118px;
+        margin: 0 auto 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 118px;
+        overflow: hidden;
+        border: 6px solid #d9f1f6;
+        border-radius: 50%;
+        background: #ffffff;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        isolation: isolate;
+        color: var(--blue);
+        font-size: 1.9rem;
+        font-weight: 900;
+        line-height: 1;
+      }
+
+      .leader-avatar img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        max-width: none;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        transform-origin: center;
+      }
+
+      /* Fine-tune each portrait independently. */
+
+      .leader-avatar--john img {
+        object-position: center 30%;
+        transform: scale(1.02);
+      }
+
+      .leader-avatar--yun img {
+        object-position: center;
+        transform: scale(1.02);
+      }
+
+      /*
+       * David's source PNG contains extra empty space on its left side.
+       * Move the actual portrait left and enlarge it slightly so his face
+       * and shoulders are visually centered in the circular frame.
+       */
+      .leader-avatar--david img {
+        object-position: center center;
+        transform: translateX(-26px) scale(1.24);
+      }
+      /* ===========================
+         Leadership Typography
+      =========================== */
+
+      .leader-card h3 {
+        margin: 0 0 0.45rem;
+        color: var(--blue);
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 1.2;
+      }
+
+      .leader-title {
+        margin: 0 0 1.5rem;
+        color: #5d6973;
+        font-size: 1.3rem;
+        font-weight: 800;
+        line-height: 1.35;
+      }
+
+      .leader-bio {
+        margin: 0;
+        color: #5f6d78;
+        font-size: 1.08rem;
+        line-height: 1.8;
+        text-align: left;
+      }
+
+      /* ===========================
+         Leadership Responsive
+      =========================== */
+
+      @media (max-width: 760px) {
+        .leadership-section .section-heading {
+          margin-bottom: 2rem;
+        }
+
+        .leader-card {
+          padding: 2rem 1.5rem;
+        }
+
+        .leader-avatar {
+          width: 104px;
+          height: 104px;
+          flex-basis: 104px;
+          font-size: 1.6rem;
+        }
+
+        .leader-card h3 {
+          font-size: 1.75rem;
+        }
+
+        .leader-title {
+          font-size: 1.15rem;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .leader-card {
+          transition: none;
+        }
+
+        .leader-card:hover {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div class="announcement">
+      Seeking qualified pilot sites, infrastructure partners and strategic
+      investors.
     </div>
-  </header>
-  <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="search-title">
-    <div class="search-dialog"><button class="search-close btn btn-secondary" type="button">Close</button>
-      <h2 id="search-title">Search FARAD</h2>
-      <div class="search-row"><label class="visually-hidden" for="site-search">Search terms</label><input
-          id="site-search" type="search" placeholder="Search technology, pilots, investors..."></div>
-      <div class="search-results">
-        <p>Start typing to search the FARAD site.</p>
-      </div>
-    </div>
-  </div>
-  <main id="main">
-    <section class="page-hero"
-      style="--hero:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1800&q=85')">
-      <div class="container"><span class="eyebrow">Mission, philosophy and responsible commercialization</span>
-        <h1>About FARAD Energy Systems</h1>
-        <p>FARAD is focused on practical opportunities to recover energy from water flow, pressure and industrial
-          infrastructure.</p>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container split">
-        <div>
-          <h2>Our Mission</h2>
-          <p>Connect promising energy-recovery technologies with facilities that have appropriate operating conditions
-            while validating technical and economic claims before large-scale deployment.</p>
-          <h2>Our Vision</h2>
-          <p>Help infrastructure operators recover useful energy from pressure and elevation conditions that would
-            otherwise be dissipated.</p>
-        </div><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85"
-          alt="Engineering office">
-      </div>
-    </section>
-    <section class="section section-soft">
-      <div class="container">
-        <div class="grid-3">
-          <article class="card">
-            <h3>Identifiable Energy Source</h3>
-            <p>Every generator must have a measurable input.</p>
-          </article>
-          <article class="card">
-            <h3>Net Results</h3>
-            <p>Include auxiliary loads, pumping effects and downtime.</p>
-          </article>
-          <article class="card">
-            <h3>Validation Before Scale</h3>
-            <p>Commercial deployment follows site testing and safety review.</p>
-          </article>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="FARAD Energy Systems home"
+        >
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <strong>FARAD</strong>
+            <span>Energy Systems</span>
+          </span>
+        </a>
+
+        <div class="header-actions">
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+          >
+            Menu
+          </button>
+
+          <nav
+            class="primary-nav"
+            id="primary-nav"
+            aria-label="Primary navigation"
+          >
+            <ul>
+              <li><a href="index.html">Home</a></li>
+
+              <li class="nav-item">
+                <button class="nav-trigger" type="button" aria-expanded="false">
+                  Technology &amp; Markets
+                </button>
+
+                <div class="mega-menu">
+                  <a href="water-cycle-system.html">
+                    <strong>Water-Cycle System</strong><br />
+                    <span>Primary hydraulic energy-recovery technology</span>
+                  </a>
+
+                  <a href="applications.html">
+                    <strong>Applications</strong><br />
+                    <span>
+                      Wastewater, water utility, reclaimed-water and industrial
+                      markets
+                    </span>
+                  </a>
+
+                  <a href="data-center-partnerships.html">
+                    <strong>Data Center Partnerships</strong><br />
+                    <span>
+                      Utility and reclaimed-water partnerships for campuses
+                    </span>
+                  </a>
+
+                  <a href="pilot-projects.html">
+                    <strong>Pilot Projects</strong><br />
+                    <span>Site qualification, measurement and validation</span>
+                  </a>
+
+                  <a href="technology-evaluation.html">
+                    <strong>Technology Evaluation</strong><br />
+                    <span>
+                      Magnetic-levitation and vehicle systems under evaluation
+                    </span>
+                  </a>
+
+                  <a href="faq.html">
+                    <strong>FAQ</strong><br />
+                    <span>Common technical and commercial questions</span>
+                  </a>
+                </div>
+              </li>
+
+              <li><a href="updates.html">News &amp; Updates</a></li>
+              <li><a href="investors.html">Investors</a></li>
+              <li><a href="about.html" aria-current="page">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <button class="search-button" type="button" aria-label="Search site">
+            Search
+          </button>
+
+          <a class="btn btn-primary header-cta" href="contact.html">
+            Request a Site Evaluation
+          </a>
         </div>
       </div>
-    </section>
-    <section class="section leadership-section" aria-labelledby="leadership-heading">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow" style="color: var(--teal);">Leadership</span>
-          <h2 id="leadership-heading">Meet the FARAD Leadership Team</h2>
+    </header>
+
+    <div
+      class="search-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="search-title"
+    >
+      <div class="search-dialog">
+        <button class="search-close btn btn-secondary" type="button">
+          Close
+        </button>
+
+        <h2 id="search-title">Search FARAD</h2>
+
+        <div class="search-row">
+          <label class="visually-hidden" for="site-search">Search terms</label>
+          <input
+            id="site-search"
+            type="search"
+            placeholder="Search technology, pilots, investors..."
+          />
+        </div>
+
+        <div class="search-results">
+          <p>Start typing to search the FARAD site.</p>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+      <section
+        class="page-hero"
+        style="
+          --hero: url(&quot;https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1800&q=85&quot;);
+        "
+      >
+        <div class="container">
+          <span class="eyebrow">
+            Mission, philosophy and responsible commercialization
+          </span>
+
+          <h1>About FARAD Energy Systems</h1>
+
           <p>
-            FARAD Energy Systems brings together leadership in engineering,
-            technology, business development and responsible commercialization.
+            FARAD is focused on practical opportunities to recover energy from
+            water flow, pressure and industrial infrastructure.
           </p>
         </div>
+      </section>
 
-        <div class="grid-3 leadership-grid">
-          <article class="card leader-card" data-reveal>
-            <div class="leader-avatar" aria-hidden="true">JM</div>
-            <h3>John J. Mitchell</h3>
-            <p class="leader-title">Co-founder &amp; Chief IT Officer</p>
-            <p class="leader-bio">
-              John leads FARAD’s information-technology strategy, digital systems,
-              website infrastructure and technology operations. He supports the
-              company’s technical communications and online collaboration with
-              prospective partners, pilot sites and investors.
+      <section class="section">
+        <div class="container split">
+          <div>
+            <h2>Our Mission</h2>
+            <p>
+              Connect promising energy-recovery technologies with facilities
+              that have appropriate operating conditions while validating
+              technical and economic claims before large-scale deployment.
             </p>
-          </article>
 
-          <article class="card leader-card" data-reveal>
-            <div class="leader-avatar" aria-hidden="true">YZ</div>
-            <h3>Yun ZHU</h3>
-            <p class="leader-title">Chief Engineer &amp; Innovator</p>
-            <p class="leader-bio">
-              Yun leads engineering development and technical innovation for
-              FARAD’s energy-recovery technologies. He guides product concepts,
-              engineering evaluation and the technical work required to advance
-              promising systems toward controlled testing and validation.
+            <h2>Our Vision</h2>
+            <p>
+              Help infrastructure operators recover useful energy from pressure
+              and elevation conditions that would otherwise be dissipated.
             </p>
-          </article>
+          </div>
 
-          <article class="card leader-card" data-reveal>
-            <div class="leader-avatar" aria-hidden="true">DW</div>
-            <h3>David Wu</h3>
-            <p class="leader-title">Co-founder, President &amp; CEO</p>
-            <p class="leader-bio">
-              David leads FARAD’s corporate strategy, operations, business
-              development and commercialization efforts. He directs relationships
-              with infrastructure partners, prospective customers, pilot hosts
-              and strategic investors.
-            </p>
-          </article>
+          <img
+            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85"
+            alt="Engineering office"
+          />
         </div>
-      </div>
-    </section>
-    <section class="section section-soft">
+      </section>
+
+      <section class="section section-soft">
+        <div class="container">
+          <div class="grid-3">
+            <article class="card">
+              <h3>Identifiable Energy Source</h3>
+              <p>Every generator must have a measurable input.</p>
+            </article>
+
+            <article class="card">
+              <h3>Net Results</h3>
+              <p>Include auxiliary loads, pumping effects and downtime.</p>
+            </article>
+
+            <article class="card">
+              <h3>Validation Before Scale</h3>
+              <p>
+                Commercial deployment follows site testing and safety review.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section leadership-section"
+        aria-labelledby="leadership-heading"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow" style="color: var(--teal)">Leadership</span>
+
+            <h2 id="leadership-heading">Meet the FARAD Leadership Team</h2>
+
+            <p>
+              FARAD Energy Systems brings together leadership in engineering,
+              technology, business development and responsible
+              commercialization.
+            </p>
+          </div>
+
+          <div class="grid-3 leadership-grid">
+            <article class="card leader-card" data-reveal>
+              <div class="leader-avatar leader-avatar--john">
+                <img src="images/John Mitchell.png" alt="John J. Mitchell" />
+              </div>
+              <h3>John J. Mitchell</h3>
+
+              <p class="leader-title">Co-founder &amp; Chief IT Officer</p>
+
+              <p class="leader-bio">
+                John leads FARAD’s information-technology strategy, digital
+                systems, website infrastructure and technology operations. He
+                supports the company’s technical communications and online
+                collaboration with prospective partners, pilot sites and
+                investors.
+              </p>
+            </article>
+
+            <article class="card leader-card" data-reveal>
+              <div class="leader-avatar leader-avatar--yun">
+                <img src="images/Yun ZHU.jpg" alt="Yun ZHU" />
+              </div>
+              <h3>Yun ZHU</h3>
+
+              <p class="leader-title">Chief Engineer &amp; Innovator</p>
+
+              <p class="leader-bio">
+                Yun leads engineering development and technical innovation for
+                FARAD’s energy-recovery technologies. He guides product
+                concepts, engineering evaluation and the technical work required
+                to advance promising systems toward controlled testing and
+                validation.
+              </p>
+            </article>
+
+            <article class="card leader-card" data-reveal>
+              <div class="leader-avatar leader-avatar--david">
+                <img src="images/David Wu.png" alt="David Wu" />
+              </div>
+              <h3>David Wu</h3>
+
+              <p class="leader-title">Co-founder, President &amp; CEO</p>
+
+              <p class="leader-bio">
+                David leads FARAD’s corporate strategy, operations, business
+                development and commercialization efforts. He directs
+                relationships with infrastructure partners, prospective
+                customers, pilot hosts and strategic investors.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container">
+          <div class="grid-4">
+            <article class="card">
+              <h3>Technical Integrity</h3>
+              <p>Separate preliminary claims from demonstrated results.</p>
+            </article>
+
+            <article class="card">
+              <h3>Operational Safety</h3>
+              <p>Protect critical systems through controls and bypasses.</p>
+            </article>
+
+            <article class="card">
+              <h3>Practical Partnerships</h3>
+              <p>Work with utilities, engineers, researchers and investors.</p>
+            </article>
+
+            <article class="card">
+              <h3>Responsible Commercialization</h3>
+              <p>Advance only when evidence supports value.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
       <div class="container">
-        <div class="grid-4">
-          <article class="card">
-            <h3>Technical Integrity</h3>
-            <p>Separate preliminary claims from demonstrated results.</p>
-          </article>
-          <article class="card">
-            <h3>Operational Safety</h3>
-            <p>Protect critical systems through controls and bypasses.</p>
-          </article>
-          <article class="card">
-            <h3>Practical Partnerships</h3>
-            <p>Work with utilities, engineers, researchers and investors.</p>
-          </article>
-          <article class="card">
-            <h3>Responsible Commercialization</h3>
-            <p>Advance only when evidence supports value.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h3>FARAD Energy Systems</h3>
-          <p>Hydraulic energy recovery, water infrastructure and responsible technology evaluation.</p>
-        </div>
-        <div>
-          <h3>Technology</h3><a href="water-cycle-system.html">Water-Cycle System</a><a
-            href="technology-evaluation.html">Technology Evaluation</a><a href="pilot-projects.html">Pilot Projects</a>
-        </div>
-        <div>
-          <h3>Markets</h3><a href="applications.html">Applications</a><a href="data-center-partnerships.html">Data
-            Centers</a><a href="investors.html">Investors</a>
-        </div>
-        <div>
-          <h3>Company</h3><a href="about.html">About</a><a href="updates.html">News & Updates</a><a
-            href="faq.html">FAQ</a><a href="contact.html">Contact</a>
-        </div>
-        <div>
-          <h3>Resources</h3><a href="downloads.html">Download Center</a><a href="contact.html">Media Inquiry</a><a
-            href="contact.html">Engineering Inquiry</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>All performance figures are preliminary or manufacturer-provided and remain subject to engineering review,
-          independent validation and site-specific operating conditions. FARAD Energy Systems does not guarantee output,
-          savings, payback, contracts, approvals, partnerships or investment returns.</p>
-        <p>© 2026 FARAD Energy Systems. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-  <a class="btn btn-primary sticky-cta" href="contact.html">Request Evaluation</a>
+        <div class="footer-grid">
+          <div>
+            <h3>FARAD Energy Systems</h3>
+            <p>
+              Hydraulic energy recovery, water infrastructure and responsible
+              technology evaluation.
+            </p>
+          </div>
 
-  <script src="js/navigation.js"></script>
-  <script src="js/search.js"></script>
-  <script src="js/interactions.js"></script>
-  <script src="js/animations.js"></script>
-</body>
+          <div>
+            <h3>Technology</h3>
+            <a href="water-cycle-system.html">Water-Cycle System</a>
+            <a href="technology-evaluation.html">Technology Evaluation</a>
+            <a href="pilot-projects.html">Pilot Projects</a>
+          </div>
 
+          <div>
+            <h3>Markets</h3>
+            <a href="applications.html">Applications</a>
+            <a href="data-center-partnerships.html">Data Centers</a>
+            <a href="investors.html">Investors</a>
+          </div>
+
+          <div>
+            <h3>Company</h3>
+            <a href="about.html">About</a>
+            <a href="updates.html">News &amp; Updates</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <div>
+            <h3>Resources</h3>
+            <a href="downloads.html">Download Center</a>
+            <a href="contact.html">Media Inquiry</a>
+            <a href="contact.html">Engineering Inquiry</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            All performance figures are preliminary or manufacturer-provided and
+            remain subject to engineering review, independent validation and
+            site-specific operating conditions. FARAD Energy Systems does not
+            guarantee output, savings, payback, contracts, approvals,
+            partnerships or investment returns.
+          </p>
+
+          <p>© 2026 FARAD Energy Systems. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a class="btn btn-primary sticky-cta" href="contact.html">
+      Request Evaluation
+    </a>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
 </html>
