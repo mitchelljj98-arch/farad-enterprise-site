@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/forms.css">
     <link rel="stylesheet" href="css/animations.css">
-    <link rel="icon" href="favicon.ico" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="farad-favicon.svg">
+
+    <!-- Web3Forms CAPTCHA Script -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </head>
 
 <body>
@@ -20,7 +21,8 @@
     <div class="announcement">Seeking qualified pilot sites, infrastructure partners and strategic investors.</div>
     <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="index.html" aria-label="FARAD Energy Systems home"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text"><strong>FARAD</strong><span>Energy
+            <a class="brand" href="index.html" aria-label="FARAD Energy Systems home"><span
+                    class="brand-mark">F</span><span class="brand-text"><strong>FARAD</strong><span>Energy
                         Systems</span></span></a>
             <div class="header-actions">
                 <button class="menu-button" type="button" aria-expanded="false"
@@ -97,11 +99,14 @@
             <div class="container">
     <form id="contact-form" class="card" action="https://api.web3forms.com/submit" method="POST">
         
-        <!-- Paste your Web3Forms Access Key here -->
-        <input type="hidden" name="access_key" value="1d3eb200-5ee5-4338-9fb9-d61ad8b7ea5b">
+        <!-- web3forms -->
+        <input type="hidden" name="access_key" value="874e4a9f-cd8a-4a21-8d67-159d2ab38f00">
         
-        <!-- Optional: Subject line of the email you receive -->
+        <!-- subject line of the recieved emails-->
         <input type="hidden" name="subject" value="New Contact Inquiry - FARAD Energy Systems">
+
+        <!-- honeypot -->
+        <input type="checkbox" name="botcheck" style="display: none;">
 
         <div class="form-grid">
             <div>
@@ -154,6 +159,10 @@
             <div class="full">
                 <label for="message">Project description</label>
                 <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="full">
+                <!-- hCaptcha Widget -->
+                <div class="h-captcha" data-captcha="true" ></div>
             </div>
             <div class="full">
                 <button type="submit" class="btn btn-primary">Submit Inquiry</button>
