@@ -3,38 +3,70 @@
 .site-header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .header-inner{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:28px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy);flex:0 0 auto}
+/* FARAD brand mark:
+   2 circles only
+   Outer = teal/blue gradient
+   Inner = white
+   Center = black lightning bolt
+*/
+
 .brand-mark {
     width: 42px;
     height: 42px;
     position: relative;
     display: inline-block;
     border-radius: 50%;
+
     background:
-        radial-gradient(circle at center,
-            #ffffff 0 20%,
-            transparent 20.5%),
-        radial-gradient(circle at 70% 30%,
+        radial-gradient(
+            circle at center,
+            #ffffff 0 26%,
+            transparent 26.5%
+        ),
+        radial-gradient(
+            circle at 70% 30%,
             #38a8a3 0%,
             #247f95 55%,
-            #18628e 100%);
-    box-shadow: inset 0 0 0 6px #d6e1e8;
+            #18628e 100%
+        );
 }
 
-/* Small black lightning bolt centered in the original white opening. */
+/* Lightning bolt */
 .brand-mark::before {
     content: "";
     position: absolute;
-    z-index: 2;
     top: 50%;
     left: 50%;
-    width: 9px;
-    height: 15px;
+
+    width: 12px;
+    height: 20px;
+
     background: #000;
-    transform: translate(-50%, -50%);
-    clip-path: polygon(56% 0, 16% 49%, 45% 49%, 30% 100%, 84% 39%, 55% 39%);
+
+    transform:
+        translate(-50%, -50%)
+        rotate(6deg);
+
+    -webkit-clip-path: polygon(
+        58% 0%,
+        17% 48%,
+        43% 48%,
+        25% 100%,
+        88% 39%,
+        60% 39%
+    );
+
+    clip-path: polygon(
+        58% 0%,
+        17% 48%,
+        43% 48%,
+        25% 100%,
+        88% 39%,
+        60% 39%
+    );
 }
 
-/* Keep the center clean: no plus-sign pseudo-element. */
+/* Make sure no older icon remains */
 .brand-mark::after {
     content: none;
 }
